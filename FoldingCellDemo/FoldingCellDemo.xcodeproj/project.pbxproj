@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ADF453851F979000001B93E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF453841F979000001B93E9 /* AppDelegate.swift */; };
+		ADF453871F979000001B93E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF453861F979000001B93E9 /* ViewController.swift */; };
+		ADF4538A1F979000001B93E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADF453881F979000001B93E9 /* Main.storyboard */; };
+		ADF4538C1F979000001B93E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADF4538B1F979000001B93E9 /* Assets.xcassets */; };
+		ADF4538F1F979000001B93E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADF4538D1F979000001B93E9 /* LaunchScreen.storyboard */; };
+		ADF4539A1F979000001B93E9 /* FoldingCellDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF453991F979000001B93E9 /* FoldingCellDemoTests.swift */; };
+		ADF453A51F979000001B93E9 /* FoldingCellDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF453A41F979000001B93E9 /* FoldingCellDemoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ADF453961F979000001B93E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADF453791F979000001B93E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADF453801F979000001B93E9;
+			remoteInfo = FoldingCellDemo;
+		};
+		ADF453A11F979000001B93E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADF453791F979000001B93E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADF453801F979000001B93E9;
+			remoteInfo = FoldingCellDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ADF453811F979000001B93E9 /* FoldingCellDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoldingCellDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADF453841F979000001B93E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ADF453861F979000001B93E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ADF453891F979000001B93E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ADF4538B1F979000001B93E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ADF4538E1F979000001B93E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ADF453901F979000001B93E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADF453951F979000001B93E9 /* FoldingCellDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoldingCellDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADF453991F979000001B93E9 /* FoldingCellDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldingCellDemoTests.swift; sourceTree = "<group>"; };
+		ADF4539B1F979000001B93E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADF453A01F979000001B93E9 /* FoldingCellDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoldingCellDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADF453A41F979000001B93E9 /* FoldingCellDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldingCellDemoUITests.swift; sourceTree = "<group>"; };
+		ADF453A61F979000001B93E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ADF4537E1F979000001B93E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADF453921F979000001B93E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADF4539D1F979000001B93E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ADF453781F979000001B93E9 = {
+			isa = PBXGroup;
+			children = (
+				ADF453831F979000001B93E9 /* FoldingCellDemo */,
+				ADF453981F979000001B93E9 /* FoldingCellDemoTests */,
+				ADF453A31F979000001B93E9 /* FoldingCellDemoUITests */,
+				ADF453821F979000001B93E9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ADF453821F979000001B93E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADF453811F979000001B93E9 /* FoldingCellDemo.app */,
+				ADF453951F979000001B93E9 /* FoldingCellDemoTests.xctest */,
+				ADF453A01F979000001B93E9 /* FoldingCellDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADF453831F979000001B93E9 /* FoldingCellDemo */ = {
+			isa = PBXGroup;
+			children = (
+				ADF453841F979000001B93E9 /* AppDelegate.swift */,
+				ADF453861F979000001B93E9 /* ViewController.swift */,
+				ADF453881F979000001B93E9 /* Main.storyboard */,
+				ADF4538B1F979000001B93E9 /* Assets.xcassets */,
+				ADF4538D1F979000001B93E9 /* LaunchScreen.storyboard */,
+				ADF453901F979000001B93E9 /* Info.plist */,
+			);
+			path = FoldingCellDemo;
+			sourceTree = "<group>";
+		};
+		ADF453981F979000001B93E9 /* FoldingCellDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				ADF453991F979000001B93E9 /* FoldingCellDemoTests.swift */,
+				ADF4539B1F979000001B93E9 /* Info.plist */,
+			);
+			path = FoldingCellDemoTests;
+			sourceTree = "<group>";
+		};
+		ADF453A31F979000001B93E9 /* FoldingCellDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ADF453A41F979000001B93E9 /* FoldingCellDemoUITests.swift */,
+				ADF453A61F979000001B93E9 /* Info.plist */,
+			);
+			path = FoldingCellDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ADF453801F979000001B93E9 /* FoldingCellDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADF453A91F979000001B93E9 /* Build configuration list for PBXNativeTarget "FoldingCellDemo" */;
+			buildPhases = (
+				ADF4537D1F979000001B93E9 /* Sources */,
+				ADF4537E1F979000001B93E9 /* Frameworks */,
+				ADF4537F1F979000001B93E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FoldingCellDemo;
+			productName = FoldingCellDemo;
+			productReference = ADF453811F979000001B93E9 /* FoldingCellDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ADF453941F979000001B93E9 /* FoldingCellDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADF453AC1F979000001B93E9 /* Build configuration list for PBXNativeTarget "FoldingCellDemoTests" */;
+			buildPhases = (
+				ADF453911F979000001B93E9 /* Sources */,
+				ADF453921F979000001B93E9 /* Frameworks */,
+				ADF453931F979000001B93E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADF453971F979000001B93E9 /* PBXTargetDependency */,
+			);
+			name = FoldingCellDemoTests;
+			productName = FoldingCellDemoTests;
+			productReference = ADF453951F979000001B93E9 /* FoldingCellDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ADF4539F1F979000001B93E9 /* FoldingCellDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADF453AF1F979000001B93E9 /* Build configuration list for PBXNativeTarget "FoldingCellDemoUITests" */;
+			buildPhases = (
+				ADF4539C1F979000001B93E9 /* Sources */,
+				ADF4539D1F979000001B93E9 /* Frameworks */,
+				ADF4539E1F979000001B93E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADF453A21F979000001B93E9 /* PBXTargetDependency */,
+			);
+			name = FoldingCellDemoUITests;
+			productName = FoldingCellDemoUITests;
+			productReference = ADF453A01F979000001B93E9 /* FoldingCellDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ADF453791F979000001B93E9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Lavie;
+				TargetAttributes = {
+					ADF453801F979000001B93E9 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					ADF453941F979000001B93E9 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = ADF453801F979000001B93E9;
+					};
+					ADF4539F1F979000001B93E9 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = ADF453801F979000001B93E9;
+					};
+				};
+			};
+			buildConfigurationList = ADF4537C1F979000001B93E9 /* Build configuration list for PBXProject "FoldingCellDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ADF453781F979000001B93E9;
+			productRefGroup = ADF453821F979000001B93E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADF453801F979000001B93E9 /* FoldingCellDemo */,
+				ADF453941F979000001B93E9 /* FoldingCellDemoTests */,
+				ADF4539F1F979000001B93E9 /* FoldingCellDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ADF4537F1F979000001B93E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADF4538F1F979000001B93E9 /* LaunchScreen.storyboard in Resources */,
+				ADF4538C1F979000001B93E9 /* Assets.xcassets in Resources */,
+				ADF4538A1F979000001B93E9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADF453931F979000001B93E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADF4539E1F979000001B93E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ADF4537D1F979000001B93E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADF453871F979000001B93E9 /* ViewController.swift in Sources */,
+				ADF453851F979000001B93E9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADF453911F979000001B93E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADF4539A1F979000001B93E9 /* FoldingCellDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADF4539C1F979000001B93E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADF453A51F979000001B93E9 /* FoldingCellDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ADF453971F979000001B93E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADF453801F979000001B93E9 /* FoldingCellDemo */;
+			targetProxy = ADF453961F979000001B93E9 /* PBXContainerItemProxy */;
+		};
+		ADF453A21F979000001B93E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADF453801F979000001B93E9 /* FoldingCellDemo */;
+			targetProxy = ADF453A11F979000001B93E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ADF453881F979000001B93E9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADF453891F979000001B93E9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ADF4538D1F979000001B93E9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADF4538E1F979000001B93E9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ADF453A71F979000001B93E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ADF453A81F979000001B93E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ADF453AA1F979000001B93E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FoldingCellDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lavie.FoldingCellDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ADF453AB1F979000001B93E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FoldingCellDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lavie.FoldingCellDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ADF453AD1F979000001B93E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FoldingCellDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lavie.FoldingCellDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoldingCellDemo.app/FoldingCellDemo";
+			};
+			name = Debug;
+		};
+		ADF453AE1F979000001B93E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FoldingCellDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lavie.FoldingCellDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoldingCellDemo.app/FoldingCellDemo";
+			};
+			name = Release;
+		};
+		ADF453B01F979000001B93E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FoldingCellDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lavie.FoldingCellDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FoldingCellDemo;
+			};
+			name = Debug;
+		};
+		ADF453B11F979000001B93E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FoldingCellDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lavie.FoldingCellDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FoldingCellDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ADF4537C1F979000001B93E9 /* Build configuration list for PBXProject "FoldingCellDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADF453A71F979000001B93E9 /* Debug */,
+				ADF453A81F979000001B93E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADF453A91F979000001B93E9 /* Build configuration list for PBXNativeTarget "FoldingCellDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADF453AA1F979000001B93E9 /* Debug */,
+				ADF453AB1F979000001B93E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADF453AC1F979000001B93E9 /* Build configuration list for PBXNativeTarget "FoldingCellDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADF453AD1F979000001B93E9 /* Debug */,
+				ADF453AE1F979000001B93E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADF453AF1F979000001B93E9 /* Build configuration list for PBXNativeTarget "FoldingCellDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADF453B01F979000001B93E9 /* Debug */,
+				ADF453B11F979000001B93E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ADF453791F979000001B93E9 /* Project object */;
+}
