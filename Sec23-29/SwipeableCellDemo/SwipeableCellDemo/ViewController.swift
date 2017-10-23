@@ -14,15 +14,24 @@ let cellID = "SwipeableCellID"
 class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    
+    fileprivate lazy var dataSource:[String] = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellID)
         
+        configData()
     }
 
+    fileprivate func configData() {
+        dataSource.removeAll()
+        for index in 0..<10 {
+            let str = "第\(index + 1)行"
+            dataSource.append(str)
+        }
+    }
+    
     fileprivate func alertShow(title:String = "确认此操作吗？", complete:@escaping (()->())) {
         let alertV = UIAlertController(title: nil, message: title, preferredStyle: .alert)
         let okaction = UIAlertAction(title: "YES", style: .default) { (action) in
@@ -36,7 +45,7 @@ class ViewController: UIViewController {
         self.present(alertV, animated: true, completion: nil)
     }
     
-    func share() {
+    fileprivate func share() {
         
         let shareTitle = "share title"
         let shareImage = #imageLiteral(resourceName: "timg")
@@ -51,13 +60,13 @@ extension ViewController:UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 10
+        return dataSource.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cellone = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath)
-        cellone.textLabel?.text = "第\(indexPath.row + 1)行"
+        cellone.textLabel?.text = dataSource[indexPath.row]
         cellone.imageView?.image = #imageLiteral(resourceName: "timg")
         return cellone
     }
@@ -65,7 +74,7 @@ extension ViewController:UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         
         let deleteAction = UITableViewRowAction(style: .default, title: "Delete") { (deleteAction, indexPath) in
-            
+            self.dataSource.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .automatic)
         }
         deleteAction.backgroundColor = UIColor.gray

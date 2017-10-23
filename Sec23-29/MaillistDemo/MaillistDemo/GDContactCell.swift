@@ -17,8 +17,8 @@ class GDContactCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        
-        
+        self.contactIcon.layer.cornerRadius = self.contactIcon.bounds.width / 2
+        self.contactIcon.layer.masksToBounds = true
     }
 
 }
