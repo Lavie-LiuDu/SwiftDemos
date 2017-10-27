@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		AD7983101F9EAEA1002418F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD79830F1F9EAEA1002418F1 /* AppDelegate.swift */; };
-		AD7983121F9EAEA1002418F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7983111F9EAEA1002418F1 /* ViewController.swift */; };
-		AD7983151F9EAEA1002418F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD7983131F9EAEA1002418F1 /* Main.storyboard */; };
 		AD7983171F9EAEA1002418F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD7983161F9EAEA1002418F1 /* Assets.xcassets */; };
 		AD79831A1F9EAEA1002418F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD7983181F9EAEA1002418F1 /* LaunchScreen.storyboard */; };
 		AD7983251F9EAEA1002418F1 /* GDToDoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7983241F9EAEA1002418F1 /* GDToDoListTests.swift */; };
 		AD7983301F9EAEA2002418F1 /* GDToDoListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD79832F1F9EAEA2002418F1 /* GDToDoListUITests.swift */; };
+		AD79837E1FA34B54002418F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD79837D1FA34B54002418F1 /* Main.storyboard */; };
+		AD7983811FA34B71002418F1 /* GDTodoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD79837F1FA34B71002418F1 /* GDTodoModel.swift */; };
+		AD7983821FA34B71002418F1 /* GDAddToDoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7983801FA34B71002418F1 /* GDAddToDoController.swift */; };
+		AD7983841FA34B7C002418F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7983831FA34B7C002418F1 /* ViewController.swift */; };
+		AD7983871FA34B87002418F1 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD7983851FA34B86002418F1 /* Realm.framework */; };
+		AD7983891FA34B93002418F1 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD7983861FA34B87002418F1 /* RealmSwift.framework */; };
+		AD79838A1FA34B93002418F1 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AD7983861FA34B87002418F1 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AD79838D1FA34B97002418F1 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AD7983851FA34B86002418F1 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,11 +39,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		AD79838B1FA34B93002418F1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AD79838D1FA34B97002418F1 /* Realm.framework in Embed Frameworks */,
+				AD79838A1FA34B93002418F1 /* RealmSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		AD79830C1F9EAEA1002418F1 /* GDToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GDToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD79830F1F9EAEA1002418F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AD7983111F9EAEA1002418F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AD7983141F9EAEA1002418F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD7983161F9EAEA1002418F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD7983191F9EAEA1002418F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD79831B1F9EAEA1002418F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +66,12 @@
 		AD79832B1F9EAEA2002418F1 /* GDToDoListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GDToDoListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD79832F1F9EAEA2002418F1 /* GDToDoListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDToDoListUITests.swift; sourceTree = "<group>"; };
 		AD7983311F9EAEA2002418F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD79837D1FA34B54002418F1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		AD79837F1FA34B71002418F1 /* GDTodoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDTodoModel.swift; sourceTree = "<group>"; };
+		AD7983801FA34B71002418F1 /* GDAddToDoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDAddToDoController.swift; sourceTree = "<group>"; };
+		AD7983831FA34B7C002418F1 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AD7983851FA34B86002418F1 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		AD7983861FA34B87002418F1 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD7983871FA34B87002418F1 /* Realm.framework in Frameworks */,
+				AD7983891FA34B93002418F1 /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,8 +125,12 @@
 			isa = PBXGroup;
 			children = (
 				AD79830F1F9EAEA1002418F1 /* AppDelegate.swift */,
-				AD7983111F9EAEA1002418F1 /* ViewController.swift */,
-				AD7983131F9EAEA1002418F1 /* Main.storyboard */,
+				AD7983801FA34B71002418F1 /* GDAddToDoController.swift */,
+				AD79837F1FA34B71002418F1 /* GDTodoModel.swift */,
+				AD7983831FA34B7C002418F1 /* ViewController.swift */,
+				AD79837D1FA34B54002418F1 /* Main.storyboard */,
+				AD7983851FA34B86002418F1 /* Realm.framework */,
+				AD7983861FA34B87002418F1 /* RealmSwift.framework */,
 				AD7983161F9EAEA1002418F1 /* Assets.xcassets */,
 				AD7983181F9EAEA1002418F1 /* LaunchScreen.storyboard */,
 				AD79831B1F9EAEA1002418F1 /* Info.plist */,
@@ -135,6 +166,7 @@
 				AD7983081F9EAEA1002418F1 /* Sources */,
 				AD7983091F9EAEA1002418F1 /* Frameworks */,
 				AD79830A1F9EAEA1002418F1 /* Resources */,
+				AD79838B1FA34B93002418F1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,9 +264,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD79837E1FA34B54002418F1 /* Main.storyboard in Resources */,
 				AD79831A1F9EAEA1002418F1 /* LaunchScreen.storyboard in Resources */,
 				AD7983171F9EAEA1002418F1 /* Assets.xcassets in Resources */,
-				AD7983151F9EAEA1002418F1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +291,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD7983121F9EAEA1002418F1 /* ViewController.swift in Sources */,
+				AD7983811FA34B71002418F1 /* GDTodoModel.swift in Sources */,
+				AD7983821FA34B71002418F1 /* GDAddToDoController.swift in Sources */,
+				AD7983841FA34B7C002418F1 /* ViewController.swift in Sources */,
 				AD7983101F9EAEA1002418F1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,14 +330,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		AD7983131F9EAEA1002418F1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AD7983141F9EAEA1002418F1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AD7983181F9EAEA1002418F1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -427,6 +453,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GDToDoList",
+				);
 				INFOPLIST_FILE = GDToDoList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lavie.GDToDoList;
@@ -441,6 +471,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GDToDoList",
+				);
 				INFOPLIST_FILE = GDToDoList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lavie.GDToDoList;
