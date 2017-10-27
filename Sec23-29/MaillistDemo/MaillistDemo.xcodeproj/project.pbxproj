@@ -17,6 +17,7 @@
 		AD79824E1F9CCB60002418F1 /* GDInfoCardlController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD79824D1F9CCB60002418F1 /* GDInfoCardlController.swift */; };
 		AD7982501F9CD90E002418F1 /* GDContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD79824F1F9CD90E002418F1 /* GDContactCell.swift */; };
 		AD7982521F9CD9B6002418F1 /* GDContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7982511F9CD9B6002418F1 /* GDContactModel.swift */; };
+		AD79837C1FA20E64002418F1 /* Contacts.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD79837B1FA20E64002418F1 /* Contacts.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		AD79824D1F9CCB60002418F1 /* GDInfoCardlController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDInfoCardlController.swift; sourceTree = "<group>"; };
 		AD79824F1F9CD90E002418F1 /* GDContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDContactCell.swift; sourceTree = "<group>"; };
 		AD7982511F9CD9B6002418F1 /* GDContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDContactModel.swift; sourceTree = "<group>"; };
+		AD79837B1FA20E64002418F1 /* Contacts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Contacts.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				AD7982511F9CD9B6002418F1 /* GDContactModel.swift */,
 				AD79824D1F9CCB60002418F1 /* GDInfoCardlController.swift */,
 				AD7982231F9CCAC2002418F1 /* Main.storyboard */,
+				AD79837B1FA20E64002418F1 /* Contacts.plist */,
 				AD7982261F9CCAC2002418F1 /* Assets.xcassets */,
 				AD7982281F9CCAC2002418F1 /* LaunchScreen.storyboard */,
 				AD79822B1F9CCAC2002418F1 /* Info.plist */,
@@ -244,6 +247,7 @@
 				AD79822A1F9CCAC2002418F1 /* LaunchScreen.storyboard in Resources */,
 				AD7982271F9CCAC2002418F1 /* Assets.xcassets in Resources */,
 				AD7982251F9CCAC2002418F1 /* Main.storyboard in Resources */,
+				AD79837C1FA20E64002418F1 /* Contacts.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

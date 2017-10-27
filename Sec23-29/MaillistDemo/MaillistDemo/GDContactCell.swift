@@ -21,4 +21,15 @@ class GDContactCell: UITableViewCell {
         self.contactIcon.layer.masksToBounds = true
     }
 
+    var contactModel:GDContactModel? {
+        didSet{
+            guard let contactModel = contactModel else {
+                return
+            }
+            self.contactName.text = contactModel.name
+            self.contactIcon.image = UIImage(named: contactModel.headPortraitStr)
+        }
+    }
+    
+    
 }

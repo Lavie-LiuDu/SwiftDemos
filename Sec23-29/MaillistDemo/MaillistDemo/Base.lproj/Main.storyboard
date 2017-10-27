@@ -75,6 +75,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="4qO-0x-9Wm"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="1xC-xP-pq0"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -87,15 +91,18 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Contacts" id="h5q-a3-eUv"/>
+                    <connections>
+                        <outlet property="contactTableV" destination="dBd-hf-ERU" id="3Qh-if-ttJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="376.80000000000001" y="132.68365817091455"/>
         </scene>
-        <!--View Controller-->
+        <!--Info Cardl Controller-->
         <scene sceneID="BWE-Jz-Luh">
             <objects>
-                <viewController id="s2e-OX-LZH" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GDInfoCardVCID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="s2e-OX-LZH" customClass="GDInfoCardlController" customModule="MaillistDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2eA-32-8dQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -207,7 +214,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XPt-oZ-lGs">
-                                <rect key="frame" x="10" y="332" width="355" height="44"/>
+                                <rect key="frame" x="10" y="332" width="355" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hk-BX-gff">
                                         <rect key="frame" x="0.0" y="0.0" width="33.5" height="15"/>
@@ -218,10 +225,10 @@
                                         <color key="textColor" red="0.094117647060000004" green="0.50588235290000005" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AoA-Iv-5kA">
-                                        <rect key="frame" x="0.0" y="23" width="42" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AoA-Iv-5kA">
+                                        <rect key="frame" x="0.0" y="22" width="42" height="78"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="21" id="cjB-hp-vUR"/>
+                                            <constraint firstAttribute="height" constant="78" id="cjB-hp-vUR"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -231,7 +238,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="AoA-Iv-5kA" secondAttribute="trailing" constant="20" symbolic="YES" id="6pr-MC-b0F"/>
-                                    <constraint firstAttribute="height" constant="44" id="7Rp-WS-jHc"/>
+                                    <constraint firstAttribute="height" constant="100" id="7Rp-WS-jHc"/>
                                     <constraint firstItem="1hk-BX-gff" firstAttribute="top" secondItem="XPt-oZ-lGs" secondAttribute="top" id="8DJ-uY-Kuw"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="1hk-BX-gff" secondAttribute="trailing" constant="20" symbolic="YES" id="H79-YY-P4F"/>
                                     <constraint firstItem="AoA-Iv-5kA" firstAttribute="leading" secondItem="XPt-oZ-lGs" secondAttribute="leading" id="Lo5-Wx-w6z"/>
@@ -259,6 +266,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yJ0-x5-l4A"/>
                     </view>
+                    <connections>
+                        <outlet property="contactEmail" destination="eYf-Ek-t0R" id="Dpp-ya-xpJ"/>
+                        <outlet property="contactIco" destination="9ee-tD-gsq" id="8GF-4W-hHh"/>
+                        <outlet property="contactModbile" destination="J7B-85-Vc6" id="9EC-au-a9Y"/>
+                        <outlet property="contactName" destination="CeY-Au-IuA" id="le0-6i-Nzl"/>
+                        <outlet property="contactNotes" destination="AoA-Iv-5kA" id="4pz-PA-X1b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tUq-Et-3cp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
