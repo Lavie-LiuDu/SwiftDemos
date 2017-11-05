@@ -27,6 +27,8 @@
 		AD9B8E621FAD5EA300A34662 /* GDThirdCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9B8E551FAD5EA200A34662 /* GDThirdCollectionViewCell.swift */; };
 		AD9B8E631FAD5EA300A34662 /* GDThirdLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9B8E561FAD5EA200A34662 /* GDThirdLayout.swift */; };
 		AD9B8E641FAD5EA300A34662 /* GDThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9B8E571FAD5EA200A34662 /* GDThirdViewController.swift */; };
+		AD9B8E661FAEBF3C00A34662 /* GDFifthPushAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9B8E651FAEBF3C00A34662 /* GDFifthPushAnimation.swift */; };
+		AD9B8E681FAEDF6000A34662 /* GDFifthPopAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9B8E671FAEDF6000A34662 /* GDFifthPopAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		AD9B8E551FAD5EA200A34662 /* GDThirdCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDThirdCollectionViewCell.swift; sourceTree = "<group>"; };
 		AD9B8E561FAD5EA200A34662 /* GDThirdLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDThirdLayout.swift; sourceTree = "<group>"; };
 		AD9B8E571FAD5EA200A34662 /* GDThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDThirdViewController.swift; sourceTree = "<group>"; };
+		AD9B8E651FAEBF3C00A34662 /* GDFifthPushAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDFifthPushAnimation.swift; sourceTree = "<group>"; };
+		AD9B8E671FAEDF6000A34662 /* GDFifthPopAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDFifthPopAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +174,8 @@
 				AD9B8E471FAD5EA200A34662 /* GDFifthCollectionViewCell.swift */,
 				AD9B8E481FAD5EA200A34662 /* GDFifthViewController.swift */,
 				AD9B8E491FAD5EA200A34662 /* GDTransitionViewController.swift */,
+				AD9B8E651FAEBF3C00A34662 /* GDFifthPushAnimation.swift */,
+				AD9B8E671FAEDF6000A34662 /* GDFifthPopAnimation.swift */,
 			);
 			path = Fifth;
 			sourceTree = "<group>";
@@ -347,6 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD9B8E581FAD5EA300A34662 /* GDFifthCollectionViewCell.swift in Sources */,
+				AD9B8E661FAEBF3C00A34662 /* GDFifthPushAnimation.swift in Sources */,
 				AD9B8E621FAD5EA300A34662 /* GDThirdCollectionViewCell.swift in Sources */,
 				AD9B8E631FAD5EA300A34662 /* GDThirdLayout.swift in Sources */,
 				AD9B8E591FAD5EA300A34662 /* GDFifthViewController.swift in Sources */,
@@ -354,6 +361,7 @@
 				AD9B8E5C1FAD5EA300A34662 /* GDFirstController.swift in Sources */,
 				AD9B8E641FAD5EA300A34662 /* GDThirdViewController.swift in Sources */,
 				AD9B8E5B1FAD5EA300A34662 /* GDFirCollectionViewCell.swift in Sources */,
+				AD9B8E681FAEDF6000A34662 /* GDFifthPopAnimation.swift in Sources */,
 				AD9B8E601FAD5EA300A34662 /* GDSecCollectionViewCell.swift in Sources */,
 				AD9B8E5F1FAD5EA300A34662 /* GDFourthViewController.swift in Sources */,
 				AD9B8E0C1FAD5AA600A34662 /* AppDelegate.swift in Sources */,

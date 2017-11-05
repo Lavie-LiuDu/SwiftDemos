@@ -8,10 +8,30 @@
 
 import UIKit
 
-class GDTransitionViewController: UIViewController {
+class GDTransitionViewController: UIViewController, UINavigationControllerDelegate {
 
+    
+    @IBOutlet weak var traniitionimageV: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.navigationController?.delegate = self
+    }
+    
+    func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationControllerOperation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        
+        if operation == .pop {
+            return GDFifthPopAnimation()
+        }
+        return nil
+        
     }
 }

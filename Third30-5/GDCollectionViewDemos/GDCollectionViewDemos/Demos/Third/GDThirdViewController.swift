@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class GDThirdViewController: UIViewController {
     
@@ -25,15 +26,15 @@ class GDThirdViewController: UIViewController {
     fileprivate func configUI() {
         
         let thirdLayout = GDThirdLayout()
-        thirdLayout.dataSource = self.dataSource
+        thirdLayout.delegate = self
         self.thirdCollectionView.collectionViewLayout = thirdLayout
     }
     
     fileprivate func configData() {
         
         for index in 1..<20 {
-            let count = index % 5 == 0 ? 1 : index % 5
-            let imageName = "Demo3_" + "\(count)"
+            let count = index % 8 == 0 ? 1 : index % 8
+            let imageName = "demo2_" + "\(count)"
             let oneImage = UIImage(named: imageName)
             self.dataSource.append(oneImage!)
         }
@@ -52,5 +53,17 @@ extension GDThirdViewController:UICollectionViewDelegate, UICollectionViewDataSo
         let cellone = collectionView.dequeueReusableCell(withReuseIdentifier: "GDThirdCollectionViewCellID", for: indexPath) as! GDThirdCollectionViewCell
         cellone.thirdImageView.image = self.dataSource[indexPath.item]
         return cellone
+    }
+}
+
+extension GDThirdViewController:GDThirdLayoutDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, HeightForItemAt indexPath: IndexPath) -> CGFloat {
+        
+        guard let layout = collectionView.collectionViewLayout as? GDThirdLayout else { return 0 }
+        let img = dataSource[indexPath.row]
+        let imgRect = CGRect(origin: .zero, size: CGSize.init(width: layout.cellWidth, height: CGFloat(MAXFLOAT)))
+        let rect = AVMakeRect(aspectRatio: img.size, insideRect: imgRect)
+        return rect.size.height
     }
 }

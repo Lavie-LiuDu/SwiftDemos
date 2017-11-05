@@ -8,87 +8,96 @@
 
 import UIKit
 
+protocol GDThirdLayoutDelegate: NSObjectProtocol {
+    func collectionView(_ collectionView: UICollectionView, HeightForItemAt indexPath: IndexPath) -> CGFloat
+    
+}
+
 class GDThirdLayout: UICollectionViewLayout {
 
-    var dataSource:[UIImage] = [UIImage]()
-    var columnCount = 2
-    fileprivate var totalHeight:[CGFloat] = [10, 10]
-    fileprivate var itemCount = 0
-    fileprivate var cellMargin:CGFloat = 10
+    weak var delegate: GDThirdLayoutDelegate!
     
-    fileprivate var attributeAttay:[UICollectionViewLayoutAttributes] = [UICollectionViewLayoutAttributes]()
+    private var numberOfColumns = 2
+    private var cellPadding: CGFloat = 5
     
-    override func prepare() {
-        super.prepare()
-        
-        self.itemCount = self.collectionView?.numberOfItems(inSection: 0) ?? 0
-        var indexPath:IndexPath
-        for index in 0..<self.itemCount {
-            indexPath = IndexPath(item: index, section: 0)
-            let attribute = layoutAttributesForItem(at: indexPath)
-            self.attributeAttay.append(attribute!)
-        }
-        
-    }
-
-    override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
-        
-        let attribute = UICollectionViewLayoutAttributes(forCellWith: indexPath)
-
-        let itemW = ((self.collectionView?.bounds.size.width)!-cellMargin * CGFloat(columnCount)) / 2
-        let itemH:CGFloat = dataSource[indexPath.row].size.height * itemW / dataSource[indexPath.row].size.width
-        
-        attribute.size = CGSize(width: itemW, height: itemH)
-
-        var nub:CGFloat = 0
-        var tempH:CGFloat = 0
-        (nub,tempH) = minH(hhs: self.totalHeight)
-        
-        let centerX:CGFloat = (nub + 0.5)*(cellMargin + itemW)
-        let centerY:CGFloat = tempH + itemH / 2
-        print("centerX:\(centerX), centerY:\(centerY)")
-        print("itemW:\(itemW), itemH:\(itemH)")
-
-        attribute.center = CGPoint(x: centerX, y: centerY)
-        
-        self.totalHeight[Int(nub)] = tempH + itemH + cellMargin
-
-        return attribute
+    
+    private var cache:[UICollectionViewLayoutAttributes] = []
+    
+    var cellWidth: CGFloat {
+        guard let width = collectionView?.bounds.width else { return 0 }
+        return width
     }
     
-    override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
-        
-        return self.attributeAttay
+    private var contentHeight: CGFloat = 0
+    private var contentWidth: CGFloat {
+        guard let collectionView = self.collectionView else { return 0 }
+        let insets = collectionView.contentInset
+        return collectionView.bounds.width - (insets.left + insets.right)
     }
-    
     
     override var collectionViewContentSize: CGSize {
-        get {
-            return CGSize(width: (self.collectionView?.bounds.width)!, height: maxH(hhs: self.totalHeight))
-        }
-        set{
-            self.collectionViewContentSize = newValue
-        }
+        return CGSize(width: contentWidth, height: contentHeight)
     }
-   
-    fileprivate func minH(hhs:[CGFloat])->(CGFloat,CGFloat){
-        var num = 0
-        var min = hhs[0]
-        for i in 1..<hhs.count{
-            if min>hhs[i] {
-                min = hhs[i]
-                num = i
+    
+    //    计算每个item的Position, calculate each item position
+    override func prepare() {
+        //        Only calculate once
+        guard cache.isEmpty, let collectionView = self.collectionView else { return }
+        
+        //PreCalculates the X Offset for each column and adds an array to increment the currently max Y Offset for each column
+        
+        //each width
+        let columnWidth = contentWidth / CGFloat(numberOfColumns)
+        var xOffset = [CGFloat]()
+        
+        //Acctually there are just two xOffset
+        for column in 0 ..< numberOfColumns {
+            xOffset.append(columnWidth * CGFloat(column))
+        }
+        
+        var column = 0
+        var yOffset = [CGFloat](repeating: 0, count: numberOfColumns)
+        
+        //        Iterates through the list of items in the first section
+        for item in 0 ..< collectionView.numberOfItems(inSection: 0) {
+            let indexPath = IndexPath(item: item, section: 0)
+            
+            
+            //Asks the delegate for the height of the picture and the annotation and calculates the cell frame.
+            let photoHeight = delegate.collectionView(collectionView, HeightForItemAt: indexPath)
+            
+            let height = cellPadding + photoHeight
+            let frame = CGRect(x: xOffset[column], y: yOffset[column], width: columnWidth, height: height)
+            let insetFrame = frame.insetBy(dx: cellPadding, dy: cellPadding)
+            
+            //Creates an UICollectionViewLayoutItem with the frame and add it to the cache
+            let attributes = UICollectionViewLayoutAttributes(forCellWith: indexPath)
+            attributes.frame = insetFrame
+            cache.append(attributes)
+            
+            // Updates the collection view content height
+            contentHeight = max(contentHeight, frame.maxY)
+            yOffset[column] = yOffset[column] + height
+            
+            column = column < (numberOfColumns - 1) ? (column + 1) : 0
+            
+        }
+        
+    }
+    
+    
+    override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
+        var layoutAttributes = [UICollectionViewLayoutAttributes]()
+        for attributes in cache {
+            if attributes.frame.intersects(rect) {
+                layoutAttributes.append(attributes)
             }
         }
-        return (CGFloat(num),min)
+        
+        return layoutAttributes
     }
-    fileprivate func maxH(hhs:[CGFloat])->CGFloat{
-        var max = hhs[0]
-        for i in 1..<hhs.count{
-            if max<hhs[i] {
-                max = hhs[i]
-            }
-        }
-        return max
+    
+    override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
+        return cache[indexPath.item]
     }
 }
