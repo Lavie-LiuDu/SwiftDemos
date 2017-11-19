@@ -1,0 +1,637 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD96D2981FC18E9400195001 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD96D2971FC18E9400195001 /* AppDelegate.swift */; };
+		AD96D29A1FC18E9400195001 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD96D2991FC18E9400195001 /* ViewController.swift */; };
+		AD96D29D1FC18E9400195001 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD96D29B1FC18E9400195001 /* Main.storyboard */; };
+		AD96D29F1FC18E9400195001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD96D29E1FC18E9400195001 /* Assets.xcassets */; };
+		AD96D2A21FC18E9400195001 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD96D2A01FC18E9400195001 /* LaunchScreen.storyboard */; };
+		AD96D2AD1FC18E9400195001 /* GDAnimationSecTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD96D2AC1FC18E9400195001 /* GDAnimationSecTests.swift */; };
+		AD96D2B81FC18E9400195001 /* GDAnimationSecUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD96D2B71FC18E9400195001 /* GDAnimationSecUITests.swift */; };
+		AD96D2D31FC18EB100195001 /* 1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AD96D2C51FC18EB100195001 /* 1.mp4 */; };
+		AD96D2D41FC18EB100195001 /* qidong.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AD96D2C61FC18EB100195001 /* qidong.mp4 */; };
+		AD96D2D51FC18EB100195001 /* GDFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD96D2C91FC18EB100195001 /* GDFirstViewController.swift */; };
+		AD96D2D61FC18EB100195001 /* GDReflectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD96D2CB1FC18EB100195001 /* GDReflectionView.swift */; };
+		AD96D2D71FC18EB100195001 /* GDSecViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD96D2CC1FC18EB100195001 /* GDSecViewController.swift */; };
+		AD96D2D81FC18EB100195001 /* GDThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD96D2CE1FC18EB100195001 /* GDThirdViewController.swift */; };
+		AD96D2D91FC18EB100195001 /* GDScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD96D2CF1FC18EB100195001 /* GDScrollView.swift */; };
+		AD96D2DA1FC18EB100195001 /* GDFourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD96D2D11FC18EB100195001 /* GDFourthViewController.swift */; };
+		AD96D2DB1FC18EB100195001 /* GDLodingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD96D2D21FC18EB100195001 /* GDLodingView.swift */; };
+		AD96D2DD1FC1A37600195001 /* Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD96D2DC1FC1A37600195001 /* Tool.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD96D2A91FC18E9400195001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD96D28C1FC18E9400195001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD96D2931FC18E9400195001;
+			remoteInfo = GDAnimationSec;
+		};
+		AD96D2B41FC18E9400195001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD96D28C1FC18E9400195001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD96D2931FC18E9400195001;
+			remoteInfo = GDAnimationSec;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AD96D2941FC18E9400195001 /* GDAnimationSec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GDAnimationSec.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD96D2971FC18E9400195001 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AD96D2991FC18E9400195001 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AD96D29C1FC18E9400195001 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AD96D29E1FC18E9400195001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD96D2A11FC18E9400195001 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AD96D2A31FC18E9400195001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD96D2A81FC18E9400195001 /* GDAnimationSecTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GDAnimationSecTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD96D2AC1FC18E9400195001 /* GDAnimationSecTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDAnimationSecTests.swift; sourceTree = "<group>"; };
+		AD96D2AE1FC18E9400195001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD96D2B31FC18E9400195001 /* GDAnimationSecUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GDAnimationSecUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD96D2B71FC18E9400195001 /* GDAnimationSecUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDAnimationSecUITests.swift; sourceTree = "<group>"; };
+		AD96D2B91FC18E9400195001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD96D2C51FC18EB100195001 /* 1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.mp4; sourceTree = "<group>"; };
+		AD96D2C61FC18EB100195001 /* qidong.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = qidong.mp4; sourceTree = "<group>"; };
+		AD96D2C91FC18EB100195001 /* GDFirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDFirstViewController.swift; sourceTree = "<group>"; };
+		AD96D2CB1FC18EB100195001 /* GDReflectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDReflectionView.swift; sourceTree = "<group>"; };
+		AD96D2CC1FC18EB100195001 /* GDSecViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDSecViewController.swift; sourceTree = "<group>"; };
+		AD96D2CE1FC18EB100195001 /* GDThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDThirdViewController.swift; sourceTree = "<group>"; };
+		AD96D2CF1FC18EB100195001 /* GDScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDScrollView.swift; sourceTree = "<group>"; };
+		AD96D2D11FC18EB100195001 /* GDFourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDFourthViewController.swift; sourceTree = "<group>"; };
+		AD96D2D21FC18EB100195001 /* GDLodingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDLodingView.swift; sourceTree = "<group>"; };
+		AD96D2DC1FC1A37600195001 /* Tool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tool.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD96D2911FC18E9400195001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD96D2A51FC18E9400195001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD96D2B01FC18E9400195001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD96D28B1FC18E9400195001 = {
+			isa = PBXGroup;
+			children = (
+				AD96D2961FC18E9400195001 /* GDAnimationSec */,
+				AD96D2AB1FC18E9400195001 /* GDAnimationSecTests */,
+				AD96D2B61FC18E9400195001 /* GDAnimationSecUITests */,
+				AD96D2951FC18E9400195001 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD96D2951FC18E9400195001 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD96D2941FC18E9400195001 /* GDAnimationSec.app */,
+				AD96D2A81FC18E9400195001 /* GDAnimationSecTests.xctest */,
+				AD96D2B31FC18E9400195001 /* GDAnimationSecUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD96D2961FC18E9400195001 /* GDAnimationSec */ = {
+			isa = PBXGroup;
+			children = (
+				AD96D2971FC18E9400195001 /* AppDelegate.swift */,
+				AD96D2991FC18E9400195001 /* ViewController.swift */,
+				AD96D2C51FC18EB100195001 /* 1.mp4 */,
+				AD96D2C61FC18EB100195001 /* qidong.mp4 */,
+				AD96D2C71FC18EB100195001 /* Demos */,
+				AD96D29B1FC18E9400195001 /* Main.storyboard */,
+				AD96D29E1FC18E9400195001 /* Assets.xcassets */,
+				AD96D2A01FC18E9400195001 /* LaunchScreen.storyboard */,
+				AD96D2A31FC18E9400195001 /* Info.plist */,
+			);
+			path = GDAnimationSec;
+			sourceTree = "<group>";
+		};
+		AD96D2AB1FC18E9400195001 /* GDAnimationSecTests */ = {
+			isa = PBXGroup;
+			children = (
+				AD96D2AC1FC18E9400195001 /* GDAnimationSecTests.swift */,
+				AD96D2AE1FC18E9400195001 /* Info.plist */,
+			);
+			path = GDAnimationSecTests;
+			sourceTree = "<group>";
+		};
+		AD96D2B61FC18E9400195001 /* GDAnimationSecUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AD96D2B71FC18E9400195001 /* GDAnimationSecUITests.swift */,
+				AD96D2B91FC18E9400195001 /* Info.plist */,
+			);
+			path = GDAnimationSecUITests;
+			sourceTree = "<group>";
+		};
+		AD96D2C71FC18EB100195001 /* Demos */ = {
+			isa = PBXGroup;
+			children = (
+				AD96D2C81FC18EB100195001 /* Fir */,
+				AD96D2CA1FC18EB100195001 /* Sec */,
+				AD96D2CD1FC18EB100195001 /* Third */,
+				AD96D2D01FC18EB100195001 /* Fourth */,
+			);
+			path = Demos;
+			sourceTree = "<group>";
+		};
+		AD96D2C81FC18EB100195001 /* Fir */ = {
+			isa = PBXGroup;
+			children = (
+				AD96D2C91FC18EB100195001 /* GDFirstViewController.swift */,
+			);
+			path = Fir;
+			sourceTree = "<group>";
+		};
+		AD96D2CA1FC18EB100195001 /* Sec */ = {
+			isa = PBXGroup;
+			children = (
+				AD96D2CB1FC18EB100195001 /* GDReflectionView.swift */,
+				AD96D2CC1FC18EB100195001 /* GDSecViewController.swift */,
+			);
+			path = Sec;
+			sourceTree = "<group>";
+		};
+		AD96D2CD1FC18EB100195001 /* Third */ = {
+			isa = PBXGroup;
+			children = (
+				AD96D2CE1FC18EB100195001 /* GDThirdViewController.swift */,
+				AD96D2CF1FC18EB100195001 /* GDScrollView.swift */,
+			);
+			path = Third;
+			sourceTree = "<group>";
+		};
+		AD96D2D01FC18EB100195001 /* Fourth */ = {
+			isa = PBXGroup;
+			children = (
+				AD96D2D11FC18EB100195001 /* GDFourthViewController.swift */,
+				AD96D2D21FC18EB100195001 /* GDLodingView.swift */,
+				AD96D2DC1FC1A37600195001 /* Tool.swift */,
+			);
+			path = Fourth;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD96D2931FC18E9400195001 /* GDAnimationSec */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD96D2BC1FC18E9400195001 /* Build configuration list for PBXNativeTarget "GDAnimationSec" */;
+			buildPhases = (
+				AD96D2901FC18E9400195001 /* Sources */,
+				AD96D2911FC18E9400195001 /* Frameworks */,
+				AD96D2921FC18E9400195001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GDAnimationSec;
+			productName = GDAnimationSec;
+			productReference = AD96D2941FC18E9400195001 /* GDAnimationSec.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD96D2A71FC18E9400195001 /* GDAnimationSecTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD96D2BF1FC18E9400195001 /* Build configuration list for PBXNativeTarget "GDAnimationSecTests" */;
+			buildPhases = (
+				AD96D2A41FC18E9400195001 /* Sources */,
+				AD96D2A51FC18E9400195001 /* Frameworks */,
+				AD96D2A61FC18E9400195001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD96D2AA1FC18E9400195001 /* PBXTargetDependency */,
+			);
+			name = GDAnimationSecTests;
+			productName = GDAnimationSecTests;
+			productReference = AD96D2A81FC18E9400195001 /* GDAnimationSecTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AD96D2B21FC18E9400195001 /* GDAnimationSecUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD96D2C21FC18E9400195001 /* Build configuration list for PBXNativeTarget "GDAnimationSecUITests" */;
+			buildPhases = (
+				AD96D2AF1FC18E9400195001 /* Sources */,
+				AD96D2B01FC18E9400195001 /* Frameworks */,
+				AD96D2B11FC18E9400195001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD96D2B51FC18E9400195001 /* PBXTargetDependency */,
+			);
+			name = GDAnimationSecUITests;
+			productName = GDAnimationSecUITests;
+			productReference = AD96D2B31FC18E9400195001 /* GDAnimationSecUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD96D28C1FC18E9400195001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = Lavie;
+				TargetAttributes = {
+					AD96D2931FC18E9400195001 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					AD96D2A71FC18E9400195001 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AD96D2931FC18E9400195001;
+					};
+					AD96D2B21FC18E9400195001 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AD96D2931FC18E9400195001;
+					};
+				};
+			};
+			buildConfigurationList = AD96D28F1FC18E9400195001 /* Build configuration list for PBXProject "GDAnimationSec" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD96D28B1FC18E9400195001;
+			productRefGroup = AD96D2951FC18E9400195001 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD96D2931FC18E9400195001 /* GDAnimationSec */,
+				AD96D2A71FC18E9400195001 /* GDAnimationSecTests */,
+				AD96D2B21FC18E9400195001 /* GDAnimationSecUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD96D2921FC18E9400195001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD96D2A21FC18E9400195001 /* LaunchScreen.storyboard in Resources */,
+				AD96D2D31FC18EB100195001 /* 1.mp4 in Resources */,
+				AD96D29F1FC18E9400195001 /* Assets.xcassets in Resources */,
+				AD96D29D1FC18E9400195001 /* Main.storyboard in Resources */,
+				AD96D2D41FC18EB100195001 /* qidong.mp4 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD96D2A61FC18E9400195001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD96D2B11FC18E9400195001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD96D2901FC18E9400195001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD96D2DB1FC18EB100195001 /* GDLodingView.swift in Sources */,
+				AD96D29A1FC18E9400195001 /* ViewController.swift in Sources */,
+				AD96D2DA1FC18EB100195001 /* GDFourthViewController.swift in Sources */,
+				AD96D2DD1FC1A37600195001 /* Tool.swift in Sources */,
+				AD96D2D51FC18EB100195001 /* GDFirstViewController.swift in Sources */,
+				AD96D2D61FC18EB100195001 /* GDReflectionView.swift in Sources */,
+				AD96D2D81FC18EB100195001 /* GDThirdViewController.swift in Sources */,
+				AD96D2D91FC18EB100195001 /* GDScrollView.swift in Sources */,
+				AD96D2D71FC18EB100195001 /* GDSecViewController.swift in Sources */,
+				AD96D2981FC18E9400195001 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD96D2A41FC18E9400195001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD96D2AD1FC18E9400195001 /* GDAnimationSecTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD96D2AF1FC18E9400195001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD96D2B81FC18E9400195001 /* GDAnimationSecUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD96D2AA1FC18E9400195001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD96D2931FC18E9400195001 /* GDAnimationSec */;
+			targetProxy = AD96D2A91FC18E9400195001 /* PBXContainerItemProxy */;
+		};
+		AD96D2B51FC18E9400195001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD96D2931FC18E9400195001 /* GDAnimationSec */;
+			targetProxy = AD96D2B41FC18E9400195001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AD96D29B1FC18E9400195001 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD96D29C1FC18E9400195001 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AD96D2A01FC18E9400195001 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD96D2A11FC18E9400195001 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD96D2BA1FC18E9400195001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AD96D2BB1FC18E9400195001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD96D2BD1FC18E9400195001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GDAnimationSec/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lavie.GDAnimationSec;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD96D2BE1FC18E9400195001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GDAnimationSec/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lavie.GDAnimationSec;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AD96D2C01FC18E9400195001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GDAnimationSecTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lavie.GDAnimationSecTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GDAnimationSec.app/GDAnimationSec";
+			};
+			name = Debug;
+		};
+		AD96D2C11FC18E9400195001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GDAnimationSecTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lavie.GDAnimationSecTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GDAnimationSec.app/GDAnimationSec";
+			};
+			name = Release;
+		};
+		AD96D2C31FC18E9400195001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GDAnimationSecUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lavie.GDAnimationSecUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GDAnimationSec;
+			};
+			name = Debug;
+		};
+		AD96D2C41FC18E9400195001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GDAnimationSecUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lavie.GDAnimationSecUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GDAnimationSec;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD96D28F1FC18E9400195001 /* Build configuration list for PBXProject "GDAnimationSec" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD96D2BA1FC18E9400195001 /* Debug */,
+				AD96D2BB1FC18E9400195001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD96D2BC1FC18E9400195001 /* Build configuration list for PBXNativeTarget "GDAnimationSec" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD96D2BD1FC18E9400195001 /* Debug */,
+				AD96D2BE1FC18E9400195001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD96D2BF1FC18E9400195001 /* Build configuration list for PBXNativeTarget "GDAnimationSecTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD96D2C01FC18E9400195001 /* Debug */,
+				AD96D2C11FC18E9400195001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD96D2C21FC18E9400195001 /* Build configuration list for PBXNativeTarget "GDAnimationSecUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD96D2C31FC18E9400195001 /* Debug */,
+				AD96D2C41FC18E9400195001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD96D28C1FC18E9400195001 /* Project object */;
+}
